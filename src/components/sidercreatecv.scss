@@ -1,0 +1,49 @@
+.ant-layout-sider {
+  background-color: #a1cbfa !important;
+}
+.menu-create {
+  color: black;
+  height: 100%;
+  width: 100%;
+  &-item {
+    margin: 15px;
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(235, 235, 235);
+    &-title {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &-child {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &-item {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border-radius: 50%;
+        &:hover {
+          background-color: aquamarine;
+        }
+      }
+      .small {
+        font-size: 12px;
+      }
+      .mid {
+        font-size: 16px;
+      }
+      .large {
+        font-size: 20px;
+      }
+    }
+    .child-size {
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

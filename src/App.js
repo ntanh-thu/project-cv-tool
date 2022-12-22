@@ -5,10 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CreateCV from "./page/CreateCV/CreateCV";
 import Home from "./page/Home/Home";
 
-import "./App.scss";
 import "antd/dist/reset.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./App.css";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,4 +32,3 @@ function App() {
 }
 
 export default App;
-F

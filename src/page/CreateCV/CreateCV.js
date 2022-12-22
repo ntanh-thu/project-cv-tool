@@ -1,7 +1,15 @@
+import { Layout } from "antd";
+import SiderCreateCV from "../../components/SiderCreateCV";
+
 function CreateCV() {
   return (
     <>
-      <div>Hello world!</div>
+      <Layout>
+        <Layout.Sider>
+          <SiderCreateCV />
+        </Layout.Sider>
+        <Layout.Content></Layout.Content>
+      </Layout>
     </>
   );
 }
