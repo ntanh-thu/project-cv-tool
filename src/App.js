@@ -7,6 +7,7 @@ import Home from "./page/Home/Home";
 
 import "antd/dist/reset.css";
 import "./App.css";
+import FormCreateCV from "./page/CreateCV/FormCreateCV";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,12 @@ function App() {
     {
       path: "/create",
       element: <CreateCV />,
+      // children: [
+      //   {
+      //     path: "/form",
+      //     element: <FormCreateCV />,
+      //   },
+      // ],
     },
   ]);
   return (

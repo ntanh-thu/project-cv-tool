@@ -1,5 +1,6 @@
-import { Button, Radio, Select } from "antd";
-import expand from "../assets/icon/icons8-resize-vertical-16.png";
+import { Radio, Select } from "antd";
+import expand from "../../assets/icon/arrows-expand-svgrepo-com.svg";
+import template from "../../assets/icon/template-svgrepo-com.svg";
 import "./sidercreatecv.scss";
 
 function MenuCreateCV({ title, children }) {
@@ -52,17 +53,25 @@ function SiderCreateCV() {
       title: "Cách dòng",
       children: (
         <div className="menu-create-item-child">
-          <div>
+          <div className="menu-create-item-child-expand small active">
             <img src={expand} />
           </div>
-          <div></div>
-          <div></div>
+          <div className="menu-create-item-child-expand mid">
+            <img src={expand} />
+          </div>
+          <div className="menu-create-item-child-expand large">
+            <img src={expand} />
+          </div>
         </div>
       ),
     },
     {
-      title: "Font chữ",
-      children: <Button />,
+      title: "Biểu mẫu",
+      children: (
+        <div className="menu-create-item-child">
+          <img className="menu-create-item-child-temp" src={template} />
+        </div>
+      ),
     },
   ];
 

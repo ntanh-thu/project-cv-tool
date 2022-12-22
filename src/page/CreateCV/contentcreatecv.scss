@@ -1,0 +1,10 @@
+.cv {
+  display: flex;
+  justify-content: center;
+  &-page {
+    margin-top: 20px;
+    background-color: white;
+    width: 210mm;
+    min-height: 260mm;
+  }
+}

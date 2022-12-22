@@ -1,5 +1,8 @@
 import { Layout } from "antd";
-import SiderCreateCV from "../../components/SiderCreateCV";
+import { createBrowserRouter, Outlet } from "react-router-dom";
+import ContentCreateCV from "./ContentCreateCV";
+import FormCreateCV from "./FormCreateCV";
+import SiderCreateCV from "./SiderCreateCV";
 
 function CreateCV() {
   return (
