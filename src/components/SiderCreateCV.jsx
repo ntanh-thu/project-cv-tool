@@ -1,4 +1,5 @@
 import { Button, Radio, Select } from "antd";
+import expand from "../assets/icon/icons8-resize-vertical-16.png";
 import "./sidercreatecv.scss";
 
 function MenuCreateCV({ title, children }) {
@@ -40,10 +41,10 @@ function SiderCreateCV() {
     {
       title: "Cỡ chữ",
       children: (
-        <div className="menu-create-item-child child-size">
-          <div className="menu-create-item-child-item small">A</div>
-          <div className="menu-create-item-child-item mid">A</div>
-          <div className="menu-create-item-child-item large">A</div>
+        <div className="menu-create-item-child">
+          <div className="menu-create-item-child-size small active">A</div>
+          <div className="menu-create-item-child-size mid">A</div>
+          <div className="menu-create-item-child-size large">A</div>
         </div>
       ),
     },
@@ -51,7 +52,9 @@ function SiderCreateCV() {
       title: "Cách dòng",
       children: (
         <div className="menu-create-item-child">
-          <div></div>
+          <div>
+            <img src={expand} />
+          </div>
           <div></div>
           <div></div>
         </div>
