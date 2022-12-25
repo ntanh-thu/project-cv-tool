@@ -11,7 +11,9 @@ function CreateCV() {
         <Layout.Sider>
           <SiderCreateCV />
         </Layout.Sider>
-        <Layout.Content></Layout.Content>
+        <Layout.Content>
+          <FormCreateCV />
+        </Layout.Content>
       </Layout>
     </>
   );
