@@ -1,4 +1,4 @@
-import { Radio, Select } from "antd";
+import { Form, Radio, Select } from "antd";
 import expand from "../../assets/icon/arrows-expand-svgrepo-com.svg";
 import template from "../../assets/icon/template-svgrepo-com.svg";
 import "./sidercreatecv.scss";
@@ -13,6 +13,11 @@ function MenuCreateCV({ title, children }) {
 }
 
 function SiderCreateCV() {
+  const [form] = Form.useForm();
+
+  const handleSave = () => {
+    form.submit();
+  };
   const MenuItems = [
     {
       title: "Tông màu",
@@ -69,7 +74,11 @@ function SiderCreateCV() {
       title: "Biểu mẫu",
       children: (
         <div className="menu-create-item-child">
-          <img className="menu-create-item-child-temp" src={template} />
+          <img
+            className="menu-create-item-child-temp"
+            src={template}
+            onClick={handleSave}
+          />
         </div>
       ),
     },
