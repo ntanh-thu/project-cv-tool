@@ -1,0 +1,17 @@
+.form-content {
+  &-row {
+    &-col {
+      padding: 20px;
+      &-page {
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #a1cbfa;
+        box-shadow: 2px 2px 2px #a1cbfa;
+        border-radius: 7px;
+        &-row{
+          
+        }
+      }
+    }
+  }
+}
